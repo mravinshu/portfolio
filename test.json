@@ -1,0 +1,46 @@
+{
+    "page": 1,
+    "total_size": 10,
+    "data" : [
+        {
+            "id":"sndjnaskjd-sdasd-sdsd",
+            "title":"xyz",
+            "type":"text",
+            "file": null,
+            "text": "Story dummy data abc",
+            "timestamp":"1346541"
+        },
+        {
+            "id":"sndjnaskjd-sdasd-sdsd1",
+            "title":"xyz",
+            "timestamp":"1346541",
+            "type":"text",
+            "file": null,
+            "text": "Story dummy data abc"
+        },
+        {
+            "id":"sndjnaskjd-sdasd-sdsd2",
+            "title":"xyz",
+            "timestamp":"1346541",
+            "type":"text",
+            "file": null,
+            "text": "Story dummy data abc"
+        },
+        {
+            "id":"sndjnaskjd-sdasd-sdsd3",
+            "title":"xyz",
+            "timestamp":"1346541",
+            "type":"text",
+            "file": null,
+            "text": "Story dummy data abc"
+        },
+        {
+            "id":"sndjnaskjd-sdasd-sdsd4",
+            "title":"xyz",
+            "timestamp":"1346541",
+            "type":"text",
+            "file": null,
+            "text": "Story dummy data abc"
+        }
+    ]
+}

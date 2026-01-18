@@ -34,22 +34,42 @@ cards.forEach((card, index) => {
 
 // Typewriter Effect
 const typewriterElement = document.getElementById('typewriter-text');
-const textToType = "DATA SCIENTIST & SOFTWARE DEVELOPER";
-let typeIndex = 0;
+const roles = ["DATA SCIENTIST", "SOFTWARE DEVELOPER", "MENTOR", "TECH ENTHUSIAST"];
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
 
 function typeWriter() {
-    if (typeIndex < textToType.length) {
-        typewriterElement.textContent += textToType.charAt(typeIndex);
-        typeIndex++;
-        setTimeout(typeWriter, 50); // Adjust typing speed here
+    const currentRole = roles[roleIndex];
+    let typeSpeed = 100;
+
+    if (isDeleting) {
+        typewriterElement.textContent = currentRole.substring(0, charIndex - 1);
+        charIndex--;
+        typeSpeed = 50;
+    } else {
+        typewriterElement.textContent = currentRole.substring(0, charIndex + 1);
+        charIndex++;
     }
+
+    if (!isDeleting && charIndex === currentRole.length) {
+        // Finished typing role, pause then delete
+        typeSpeed = 2000;
+        isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+        // Finished deleting, switch to next role
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        typeSpeed = 500;
+    }
+
+    setTimeout(typeWriter, typeSpeed);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Clear it just in case
     if (typewriterElement) {
-        typewriterElement.textContent = '';
-        setTimeout(typeWriter, 500); // Small delay before starting
+        typewriterElement.textContent = "";
+        setTimeout(typeWriter, 500);
     }
 });
 

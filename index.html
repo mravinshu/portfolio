@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravinshu | Data Scientist & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="container">
+        <header class="hero-section">
+            <div class="avatar-container">
+                <img src="me.png" alt="Ravinshu Profile" class="avatar" id="profile-avatar">
+            </div>
+            <div class="hero-content">
+                <span class="eyebrow" id="typewriter-text"></span>
+                <h1>Hello, I'm <span class="highlight">Ravinshu Makkar.</span><br>Building Intelligent <span
+                        class="highlight-2">Solutions.</span></h1>
+            </div>
+        </header>
+
+        <section class="grid-menu">
+            <!-- Projects Card -->
+            <a href="#projects" class="card projects-card">
+                <div class="card-icon"><i class="fa-regular fa-folder-open"></i></div>
+                <div class="card-text">
+                    <h3>PROJECTS</h3>
+                    <p>View my recent work</p>
+                </div>
+            </a>
+
+            <!-- Skills Card -->
+            <a href="#skills" class="card skills-card">
+                <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <div class="card-text">
+                    <h3>SKILLS</h3>
+                    <p>My technical stack</p>
+                </div>
+            </a>
+
+            <!-- Education Card -->
+            <a href="#education" class="card education-card">
+                <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="card-text">
+                    <h3>EDUCATION</h3>
+                    <p>Academic background</p>
+                </div>
+            </a>
+
+            <!-- Experience Card -->
+            <a href="#experience" class="card experience-card">
+                <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="card-text">
+                    <h3>EXPERIENCE</h3>
+                    <p>Professional Path</p>
+                </div>
+            </a>
+
+            <!-- Achievements Card -->
+            <a href="#achievements" class="card achievements-card">
+                <div class="card-icon"><i class="fa-solid fa-trophy"></i></div>
+                <div class="card-text">
+                    <h3>ACHIEVEMENTS</h3>
+                    <p>Honors & Awards</p>
+                </div>
+            </a>
+
+            <!-- Contact Card -->
+            <a href="#contact" class="card contact-card">
+                <div class="card-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="card-text">
+                    <h3>CONTACT ME</h3>
+                    <p>Get in touch</p>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <div id="projects-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>1. SRM</h3>
+                    <p>Description for SRM project...</p>
+                </div>
+                <div class="project-item">
+                    <h3>2. Light Chat</h3>
+                    <p>Description for Light Chat project...</p>
+                </div>
+                <div class="project-item">
+                    <h3>3. Anime Player</h3>
+                    <p>Description for Anime Player project...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills-modal" class="modal">
+        <div class="modal-content skills-content">
+            <button class="close-modal">&times;</button>
+            <h2>Skills</h2>
+            <div class="skills-container">
+
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-item"><span>Python</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>Java</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>Dart</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Database Management</h3>
+                    <div class="skill-item"><span>PostgreSQL</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>Elasticsearch</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>Redis</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>HBase</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>Mongo</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Scripting</h3>
+                    <div class="skill-item"><span>Bash & Shell</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>BigData Technologies</h3>
+                    <div class="skill-item"><span>Hadoop</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>Apache Spark</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>Airflow</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>App Development</h3>
+                    <div class="skill-item"><span>Flutter SDK</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>Android SDK</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Messaging & Streaming</h3>
+                    <div class="skill-item"><span>RabbitMQ</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>Kafka</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>Websocket</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-item"><span>Git</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>Figma</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>Linux</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>OS</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Core Concepts</h3>
+                    <div class="skill-item"><span>Rest API</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>Database Design</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>Debugging</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item"><span>JSON</span>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="--w: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="education-modal" class="modal">
+        <div class="modal-content education-content">
+            <button class="close-modal">&times;</button>
+            <h2>Education</h2>
+            <div class="education-timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-data">
+                        <h3>Post Graduate Diploma</h3>
+                        <h4>CDAC ACTS, Pune</h4>
+                        <span class="timeline-date">Aug 2025 - Present</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-data">
+                        <h3>B.Tech Computer Science And Engineering</h3>
+                        <h4>Lovely Professional University, Jalandhar</h4>
+                        <span class="timeline-date">Aug 2019 - July 2023</span>
+                        <p class="grade">8.17 / 10 CGPA ~ 81.7%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-data">
+                        <h3>12th (CBSE)</h3>
+                        <h4>Pathania Public School, Rohtak</h4>
+                        <span class="timeline-date">2017-2018</span>
+                        <p class="grade">77.8%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-data">
+                        <h3>10th (CBSE)</h3>
+                        <h4>Holy Family Convent School, Gohana</h4>
+                        <span class="timeline-date">2015-2016</span>
+                        <p class="grade">83.6%</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="experience-modal" class="modal">
+        <div class="modal-content experience-content">
+            <button class="close-modal">&times;</button>
+            <h2>Experience</h2>
+            <div class="education-timeline">
+                <p style="color: var(--text-muted);">Experience details coming soon...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="achievements-modal" class="modal">
+        <div class="modal-content achievements-content">
+            <button class="close-modal">&times;</button>
+            <h2>Achievements</h2>
+            <div class="achievements-list">
+
+                <div class="achievement-item">
+                    <div class="achieve-icon"><i class="fa-solid fa-medal"></i></div>
+                    <div class="achieve-text">
+                        <h3>University Finalist, Flipkart Grid - 2022</h3>
+                        <p>Selected among top teams to represent university in final stage of Flipkart Grid 4.0</p>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achieve-icon"><i class="fa-solid fa-award"></i></div>
+                    <div class="achieve-text">
+                        <h3>Runner-Up, Bosch Ideathon - 2022</h3>
+                        <p>Secured 2nd position in BGSW IOT Garage University Collaboration Ideathon for idea "Shopping
+                            mall in fingertips"</p>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achieve-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <div class="achieve-text">
+                        <h3>Winner, HackGujrat Sponsor Prize - 2020</h3>
+                        <p>Awarded sponsor prize by echoAR for project chemistARy - an augmented reality based website
+                            for learning chemistry</p>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achieve-icon"><i class="fa-solid fa-star"></i></div>
+                    <div class="achieve-text">
+                        <h3>Runner-Up, DPS Rohtak - 2018</h3>
+                        <p>Won 2nd Prize in district level team PPT presentation competition held in DPS Rohtak, Haryana
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-modal" class="modal">
+        <div class="modal-content contact-content">
+            <button class="close-modal">&times;</button>
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <a href="tel:+919255469840" class="contact-item">
+                    <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                    <span>+91 9255469840</span>
+                </a>
+
+                <div class="contact-item">
+                    <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="email-links">
+                        <a href="mailto:mravinshu@gmail.com">Gmail: mravinshu</a>
+                        <span class="separator">|</span>
+                        <a href="mailto:mravinshu@icloud.com">iCloud: mravinshu</a>
+                    </div>
+                </div>
+
+                <a href="https://github.com/mravinshu" target="_blank" class="contact-item">
+                    <div class="icon-box"><i class="fa-brands fa-github"></i></div>
+                    <span>GitHub: mravinshu</span>
+                </a>
+
+                <a href="https://linkedin.com/in/mravinshu" target="_blank" class="contact-item">
+                    <div class="icon-box"><i class="fa-brands fa-linkedin"></i></div>
+                    <span>LinkedIn: mravinshu</span>
+                </a>
+
+                <a href="https://leetcode.com/u/mravinshu/" target="_blank" class="contact-item">
+                    <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                    <span>LeetCode: mravinshu</span>
+                </a>
+
+                <a href="https://www.google.com/search?q=ravinshu+makkar" target="_blank" class="contact-item">
+                    <div class="icon-box"><i class="fa-brands fa-google"></i></div>
+                    <span>Google: Ravinshu Makkar</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

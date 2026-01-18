@@ -282,6 +282,8 @@ body {
     /* Will be updated by JS */
     transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     /* Ease-out quart-ish for "popping" feel */
+    max-height: 85vh;
+    overflow-y: auto;
 }
 
 /* The open state for the content */
@@ -498,12 +500,12 @@ body {
 
 /* Contact Modal Styles */
 .contact-content {
-    max-width: 500px;
+    max-width: 800px;
 }
 
 .contact-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 

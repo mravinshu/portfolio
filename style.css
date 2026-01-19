@@ -146,13 +146,37 @@ body {
 .highlight {
     background: linear-gradient(90deg, var(--accent-teal), var(--accent-blue));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .highlight-2 {
     background: linear-gradient(90deg, var(--text-main), var(--accent-purple));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* Resume Button */
+.btn-resume {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--accent-teal), var(--accent-blue));
+    color: var(--bg-color);
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-resume:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(59, 222, 200, 0.3);
+}
+
+.btn-resume i {
+    margin-left: 0.5rem;
 }
 
 /* Grid Menu */
@@ -332,15 +356,56 @@ body {
     background: rgba(255, 255, 255, 0.08);
 }
 
-.project-item h3 {
-    color: var(--accent-blue);
+/* Project Item Header & Link */
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 0.5rem;
 }
 
-.project-item p {
+.project-item h3 {
+    color: var(--accent-blue);
+    margin-bottom: 0;
+    /* Override default margin */
+}
+
+.github-link {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.github-link:hover {
+    color: var(--text-main);
+    transform: scale(1.1);
+}
+
+.project-desc {
     font-size: 0.9rem;
     color: var(--text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.5;
 }
+
+/* Project Tech Stack */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    background: rgba(112, 88, 255, 0.1);
+    /* Low opacity purple */
+    color: var(--accent-purple);
+    padding: 0.3rem 0.7rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(112, 88, 255, 0.2);
+}
+
+
 
 /* Skills Modal Styles */
 .skills-content {

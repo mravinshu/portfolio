@@ -1,10 +1,16 @@
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            e.preventDefault();
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
 });
 
@@ -123,4 +129,5 @@ setupGenieModal('.skills-card', 'skills-modal');
 setupGenieModal('.education-card', 'education-modal');
 setupGenieModal('.experience-card', 'experience-modal');
 setupGenieModal('.achievements-card', 'achievements-modal');
+setupGenieModal('.btn-resume', 'resume-modal');
 setupGenieModal('.contact-card', 'contact-modal');
